@@ -55,7 +55,7 @@ def create_topic_classifier() -> Callable[[str], str]:
         # ---------------------------------------------------------
         if re.search(
             r'rico|delicioso|me encanta|bueno|espectacular|'
-            r'me gusta|qué rica|que rica|riquísima',
+            r'me gusta|qué rica|que rica|riquísima|dulce',
             comment_lower
         ):
             return 'Opinión General del Producto'
