@@ -7,11 +7,7 @@ Personalizable por campaña/producto
 import re
 from typing import Callable
 
-def create_topic_classifier_v2() -> Callable[[str], str]:
-    """
-    Clasificador v2: Optimizado para campaña de Avena Canela Navidad.
-    Incluye detección de Influencers, Spam agresivo y matices de ingredientes.
-    """
+def create_topic_classifier() -> Callable[[str], str]:
 
     def classify_topic(comment: str) -> str:
         # Convertir a minúsculas y limpiar espacios extra
